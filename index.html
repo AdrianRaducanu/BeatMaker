@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>BeatsByA</title>
+</head>
+<body>
+    <div class="main-div">
+        <div class="first-sound">
+            <div class="controls first-controls">         
+                <h1>Kick</h1>
+                <button data-track="0" class="mute first-volume">
+                    <i class="fas fa-volume-mute"></i>
+                </button>
+                <select name="first-select" id="id-first-select">
+                    <option value="./sounds/kick-classic.wav">
+                        Classic Kick
+                    </option>
+                    <option value="./sounds/kick-808.wav">
+                        808 Kick
+                    </option>
+                    <option value="./sounds/kick-softy.wav">
+                        Soft Kick
+                    </option>
+                </select>
+            </div>
+            <div class="pads first-pads">
+                <div class="pad first-pad b0"></div>
+                <div class="pad first-pad b1"></div>
+                <div class="pad first-pad b2"></div>
+                <div class="pad first-pad b3"></div>
+                <div class="pad first-pad b4"></div>
+                <div class="pad first-pad b5"></div>
+                <div class="pad first-pad b6"></div>
+                <div class="pad first-pad b7"></div>
+            </div>
+        </div>
+        <div class="second-sound">
+            <div class="controls second-controls">         
+                <h1>Snare</h1>
+                <button data-track="1" class="mute second-volume">
+                    <i class="fas fa-volume-mute"></i>
+                </button>
+                <select name="second-select" id="id-second-select">
+                    <option value="./sounds/snare-acoustic01.wav">
+                        Acoutic Snare
+                    </option>
+                    <option value="./sounds/snare-808.wav">
+                        808 Snare
+                    </option>
+                    <option value="./sounds/snare-vinyl02.wav">
+                        Vinyl Snare
+                    </option>
+                </select>
+            </div>
+            <div class="pads second-pads">
+                <div class="pad second-pad b0"></div>
+                <div class="pad second-pad b1"></div>
+                <div class="pad second-pad b2"></div>
+                <div class="pad second-pad b3"></div>
+                <div class="pad second-pad b4"></div>
+                <div class="pad second-pad b5"></div>
+                <div class="pad second-pad b6"></div>
+                <div class="pad second-pad b7"></div>
+            </div>
+        </div>
+        <div class="third-sound">
+            <div class="controls third-controls">         
+                <h1>HiHat</h1>
+                <button data-track="2" class="mute third-volume">
+                    <i class="fas fa-volume-mute"></i>
+                </button>
+                <select name="third-select" id="id-third-select">
+                    <option value="./sounds/hihat-acoustic01.wav">
+                        Acoustic HiHat
+                    </option>
+                    <option value="./sounds/hihat-808.wav">
+                        808 HiHat
+                    </option>
+                    
+                </select>
+            </div>
+            <div class="pads third-pads">
+                <div class="pad third-pad b0"></div>
+                <div class="pad third-pad b1"></div>
+                <div class="pad third-pad b2"></div>
+                <div class="pad third-pad b3"></div>
+                <div class="pad third-pad b4"></div>
+                <div class="pad third-pad b5"></div>
+                <div class="pad third-pad b6"></div>
+                <div class="pad third-pad b7"></div>
+            </div>
+        </div>
+        <button class="play">
+            Play
+        </button>
+        <div class="tempo">
+            <input type="range" class="tempo-slider" max="300" min="50" value="150">
+            <p>Tempo :
+                <span class="tempo-nr">150</span>
+            </p>
+        </div>
+    </div>
+    <audio class="kick-sound" src="./sounds/kick-classic.wav"></audio>
+    <audio class="snare-sound" src="./sounds/snare-acoustic01.wav"></audio>
+    <audio class="hihat-sound" src="./sounds/hihat-acoustic01.wav"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
